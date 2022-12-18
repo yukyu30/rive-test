@@ -1,10 +1,6 @@
-import { useRive, useStateMachineInput } from "@rive-app/react-canvas"
-import { useEffect, useState } from "react";
-type Props = {
-    className?: string
-}
+import { useRive } from "@rive-app/react-canvas"
 
-export const Eye = (props: Props) => {
+export const Eye = () => {
     const { rive, RiveComponent } = useRive({
         src: "/eye.riv",
         autoplay: true,
